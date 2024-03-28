@@ -1,0 +1,63 @@
+﻿@{
+    // Set the title of the page dynamically
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body, html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        /* Remove background image from .bgimg-1 class (optional) */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        /* Style for the image to cover the entire background */
+        .header-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section with Background Image -->
+    <header class="bgimg-1 w3-display-container " id="home">
+        <!-- Background Image -->
+        <img src="https://cldv1.blob.core.windows.net/images/african_background.jpg" alt="Background Image" class="header-img">
+
+        <!-- Content Overlaid on the Background Image -->
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Brings Artisans together</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Brings Artisans together</span><br>
+            <span class="w3-large">Discover handcrafted products from all over the world</span>
+            <!-- Button for navigating to About page -->
+            <p><a asp-area="" asp-controller="User" asp-action="About" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Find out more</a></p>
+        </div>
+    </header>
+</body>
+</html>
+
+
