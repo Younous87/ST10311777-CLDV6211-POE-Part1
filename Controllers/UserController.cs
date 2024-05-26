@@ -7,7 +7,7 @@ namespace FirstWebApp.Controllers
     {
         public UserTable usertbl = new UserTable();
 
-        [HttpPost]
+		[HttpPost]
         public ActionResult About(UserTable user)
         {
             var result = usertbl.insert_User(user);
@@ -19,5 +19,19 @@ namespace FirstWebApp.Controllers
         {
             return View(usertbl);
         }
-    }
+
+        [HttpPost]
+        public ActionResult SignUp(UserTable user)
+        {
+	        var result = usertbl.insert_User(user);
+	        return RedirectToAction("HomePage", "Home");
+        }
+
+        [HttpGet]
+        public ActionResult SignUp()
+        {
+			return View(usertbl);
+		}
+
+	}
 }

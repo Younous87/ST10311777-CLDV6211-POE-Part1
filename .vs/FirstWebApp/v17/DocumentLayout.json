@@ -3,32 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\productstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\productstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\transactiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\transactiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\user\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\user\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\home\\mywork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\home\\mywork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\usertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\usertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\productdisplaymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\productdisplaymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\productdisplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\productdisplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\product\\mywork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\product\\mywork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|c:\\users\\youyou\\onedrive\\bureau\\firstwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1150171E-90B4-453E-B981-02AD566E484D}|FirstWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,34 +90,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 19,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-29T09:10:23.343Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:41:57.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\HomePage.cshtml",
-              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\HomePage.cshtml",
-              "RelativeToolTip": "Views\\Home\\HomePage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T09:03:58.616Z",
-              "IsPinned": true,
+              "DocumentIndex": 7,
+              "Title": "ProductDisplayModel.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\ProductDisplayModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProductDisplayModel.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\ProductDisplayModel.cs",
+              "RelativeToolTip": "Models\\ProductDisplayModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:41:49.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserTable.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\UserTable.cs",
+              "RelativeDocumentMoniker": "Models\\UserTable.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\UserTable.cs",
+              "RelativeToolTip": "Models\\UserTable.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBMAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:41:41.762Z",
               "EditorCaption": ""
             },
             {
@@ -74,52 +150,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T16:05:24.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T16:02:12.418Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MyWork.cshtml",
-              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\MyWork.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\MyWork.cshtml",
-              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\MyWork.cshtml",
-              "RelativeToolTip": "Views\\Home\\MyWork.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T09:17:10.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
               "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Contact.cshtml",
               "RelativeToolTip": "Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T12:44:54.22Z"
+              "WhenOpened": "2024-05-24T17:15:25.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\User\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\User\\SignUp.cshtml",
+              "RelativeToolTip": "Views\\User\\SignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T17:12:20.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -129,9 +182,179 @@
               "RelativeDocumentMoniker": "Views\\User\\About.cshtml",
               "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\User\\About.cshtml",
               "RelativeToolTip": "Views\\User\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T12:04:11.532Z"
+              "WhenOpened": "2024-05-24T17:12:09.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\HomePage.cshtml",
+              "RelativeToolTip": "Views\\Home\\HomePage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:47:44.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "transactionTable.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\transactionTable.cs",
+              "RelativeDocumentMoniker": "Models\\transactionTable.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\transactionTable.cs",
+              "RelativeToolTip": "Models\\transactionTable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T11:18:10.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "productsTable.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\productsTable.cs",
+              "RelativeDocumentMoniker": "Models\\productsTable.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\productsTable.cs",
+              "RelativeToolTip": "Models\\productsTable.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAwEgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T14:00:40.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowI0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T16:15:16.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Controllers\\TransactionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T16:13:08.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductDisplayController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\ProductDisplayController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductDisplayController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\ProductDisplayController.cs",
+              "RelativeToolTip": "Controllers\\ProductDisplayController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:48:23.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwDUAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T13:53:30.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:08:41.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T14:08:55.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T14:23:42.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T14:11:23.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyWork.cshtml",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Product\\MyWork.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\MyWork.cshtml",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Product\\MyWork.cshtml",
+              "RelativeToolTip": "Views\\Product\\MyWork.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T17:26:29.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\YouYou\\OneDrive\\Bureau\\FirstWebApp\\Views\\Home\\Cart.cshtml",
+              "RelativeToolTip": "Views\\Home\\Cart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T13:57:54.424Z",
+              "EditorCaption": ""
             }
           ]
         }

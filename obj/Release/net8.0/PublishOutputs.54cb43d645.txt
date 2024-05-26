@@ -5,6 +5,10 @@ C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\FirstW
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\FirstWebApp.deps.json
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\FirstWebApp.runtimeconfig.json
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\FirstWebApp.pdb
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Azure.Core.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Azure.Identity.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Azure.Storage.Blobs.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Azure.Storage.Common.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Humanizer.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
@@ -23,6 +27,9 @@ C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Micros
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.DiaSymReader.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.NET.StringTools.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -43,6 +50,7 @@ C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\NuGet.
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\NuGet.ProjectModel.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\NuGet.Protocol.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\NuGet.Versioning.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.ClientModel.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.CodeDom.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Composition.AttributedModel.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Composition.Convention.dll
@@ -52,6 +60,8 @@ C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Data.SqlClient.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Drawing.Common.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.IO.Hashing.dll
+C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Memory.Data.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Reflection.MetadataLoadContext.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 C:\Users\YouYou\OneDrive\Bureau\FirstWebApp\obj\Release\net8.0\PubTmp\Out\System.Security.Permissions.dll

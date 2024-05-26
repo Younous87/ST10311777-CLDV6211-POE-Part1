@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\YouYou\OneDrive\Bureau\FirstWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +38,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Home/MyWork.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVdvcmsuY3NodG1s
+[C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Product/MyWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNeVdvcmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/Shared/Error.cshtml]
@@ -48,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/User/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/User/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/YouYou/OneDrive/Bureau/FirstWebApp/Views/_ViewImports.cshtml]

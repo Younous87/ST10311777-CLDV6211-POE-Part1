@@ -1,0 +1,26 @@
+﻿
+@{
+	ViewData["Title"] = "Login";
+}
+<div class="w3-center" style="margin-top:128px">
+	<h1 class="w3-center">Login</h1>
+	<p>If you don't have an account <a asp-area="" asp-controller="User" asp-action="SignUp" >Sign Up</a> for a new account.</p>
+	<p>To see Admin controls please enter </p>
+	<p>Name:Admin</p>
+	<p>Email:Admin</p>
+</div>
+
+<div style="margin-top:48px">
+	<br>
+	<!-- Form for Contacting the Company -->
+	<form asp-controller="Login" asp-action="Login" method="post">
+		<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+		<p><input class="w3-input w3-border" type="text" placeholder="example@gmail.com" required name="Email"></p>
+		<p>
+			<button class="w3-button w3-black" type="submit">
+				<i class="fa fa-paper-plane"></i> SEND
+			</button>
+		</p>
+	</form>
+</div>
+

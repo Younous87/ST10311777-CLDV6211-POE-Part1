@@ -17,7 +17,7 @@ namespace FirstWebApp.Models
             
             {
                 SqlConnection con = new SqlConnection("Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog = CLOUD-db; Persist Security Info=False;User ID = admin-youyou; Password=C'esttropcool87; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30");
-                string sql = "INSERT INTO UserTable(Name,Surname, Email) VALUES(@Name,@Surname, @Email)";
+                string sql = "INSERT INTO UserTable(userName,userSurname, userEmail) VALUES(@Name,@Surname, @Email)";
                 SqlCommand cmd = new SqlCommand(sql,con );
                 cmd.Parameters.AddWithValue("@Name", m.Name);
                 cmd.Parameters.AddWithValue("@Surname", m.Surname);
