@@ -1,35 +1,51 @@
 ﻿@model List<FirstWebApp.Models.productsTable>
 
 @{
-    ViewData["Title"] = "My Work";
-    var userId = ViewData["userId"];
-    var products = ViewData["Products"] as List<FirstWebApp.Models.productsTable>;
+	// Set the title of the page
+	ViewData["Title"] = "My Work";
+	// Get the user ID from the ViewData dictionary
+	var userId = ViewData["userId"];
+	// Get the list of products from the ViewData dictionary
+	var products = ViewData["Products"] as List<FirstWebApp.Models.productsTable>;
 }
 
+<!-- Display the title and header -->
 <div class="row" id="work" style="margin-top:128px">
 	<h1 class="w3-center">OUR WORK</h1>
 	<p class="w3-center w3-large">Services and Products we offer</p>
 
+	<!-- Loop through each product in the list -->
 	<div class="w3-row-padding" style="margin-top:64px">
 		@foreach (var product in products)
 		{
+			// Check if the product is active or if the user ID is 12 (likely an admin user)
 			if (product.IsActive == 1 || (int)userId == 12)
 			{
+				<!-- Display the product card -->
 				<div class="w3-col l3 m6 w3-margin-bottom">
 					<div class="w3-card">
+						<!-- Display the product image -->
 						<img src="@product.ImageURL" alt="Product picture" style="width:100%">
 						<div class="w3-container w3-center">
+							<!-- Display the product name and price -->
 							<h4 class="card-title">@product.Name</h4>
-							<p class="card-text">R@{
-									var price = decimal.Parse(product.Price); @price.ToString("F2")
-								}</p>
+							<p class="card-text">
+								R@{
+									var price = decimal.Parse(product.Price);
+									@price.ToString("F2")
+								}
+							</p>
 							<p class="card-text">@product.Category</p>
+							<!-- Check if the user ID is 12 (likely an admin user) -->
 							@if ((int)userId == 12)
 							{
+								<!-- Display the product ID and additional actions -->
 								<p class="card-text">Product ID: @product.ProductID</p>
-								
-							}else if(@product.Availability == "True")
+
+							}
+							else if (@product.Availability == "True")
 							{
+								<!-- Display the "Place Order" button -->
 								<p class="card-text">Available</p>
 								<p>
 									<form asp-controller="Transaction" asp-action="PlaceOrder" method="post">
@@ -41,21 +57,25 @@
 							}
 							else
 							{
+								<!-- Display the "Unavailable" message -->
 								<p class="card-text">Unavailable</p>
 							}@if (userId.Equals(12))
 							{
+								<!-- Check if the product is active or inactive -->
 								if (product.IsActive == 0)
 								{
+									<!-- Display the "Add product" button -->
 									<p>
 										<form asp-controller="Product" asp-action="AddProduct" method="post">
 											<input type="hidden" name="productID" value="@product.ProductID" />
 											<button type="submit" class="btn btn-danger">Add product</button>
 										</form>
 									</p>
-									
+
 								}
 								else
 								{
+									<!-- Display the "Remove Product" button -->
 									<p>
 										<form asp-controller="Product" asp-action="RemoveProduct" method="post">
 											<input type="hidden" name="productID" value="@product.ProductID" />
@@ -64,6 +84,7 @@
 									</p>
 								}
 
+								<!-- Display the "Update Availability" form -->
 								<p>
 									<form asp-controller="Product" asp-action="UpdateAvailability" method="post">
 										<input type="hidden" name="productID" value="@product.ProductID" />
@@ -73,10 +94,14 @@
 									</form>
 								</p>
 
+								<!-- Display the "Update Price" form -->
 								<p>
 									<form asp-controller="Product" asp-action="UpdatePrice" method="post">
+										<!-- Hidden input field to store the product ID -->
 										<input type="hidden" name="productID" value="@product.ProductID" />
+										<!-- Input field to enter the new price -->
 										<p><input class="w3-input w3-border" type="number" placeholder="Price" required name="Price" id="priceInput"></p>
+										<!-- Submit button to update the price -->
 										<p><button type="submit" class="btn btn-primary">Update Price</button></p>
 									</form>
 								</p>
@@ -89,66 +114,91 @@
 	</div>
 </div>
 
+<!-- Check if the user ID is 12 -->
 @if ((int)userId == 12)
 {
+	<!-- Display the "Add Products or services" section -->
 	<div class="w3-container" style="padding:128px 16px" id="addProd">
 		<h3 class="w3-center">Add Products or services</h3>
 		<div style="margin-top:48px">
 			<br>
+			<!-- Form to add a new product -->
 			<form id="uploadForm" action="MyWork" method="post" enctype="multipart/form-data">
+				<!-- Input field to enter the product name -->
 				<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+				<!-- Input field to enter the product price -->
 				<p><input class="w3-input w3-border" type="number" placeholder="Price" required name="Price" id="priceInput"></p>
+				<!-- Input field to enter the product category -->
 				<p><input class="w3-input w3-border" type="text" placeholder="Category" required name="Category"></p>
-				<p><input type="radio" name="availability" value="True"> Available
-					<input type="radio" name="availability" value="False"> Unavailable</p>
+				<!-- Radio buttons to select the product availability -->
+				<p>
+					<input type="radio" name="availability" value="True"> Available
+					<input type="radio" name="availability" value="False"> Unavailable
+				</p>
+				<!-- Input field to upload the product image -->
 				<p><input type="file" name="Image" accept="image/*" required></p>
+				<!-- Submit button to add the product -->
 				<p>
 					<button class="w3-button w3-black" type="submit">
 						<i class="fa fa-paper-plane"></i> SEND
 					</button>
 				</p>
 			</form>
+			<!-- Div to display the upload result -->
 			<div id="uploadResult"></div>
 		</div>
 	</div>
 }
 
 @section Scripts {
+	<!-- Reference to jQuery library -->
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+	<!-- Reference to Bootstrap JavaScript library -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
-        $(function () {
-            $('#uploadForm').on('submit', function (e) {
-                e.preventDefault();
-                var formData = new FormData(this);
-                $.ajax({
-                    url: $(this).attr('action'),
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function (data) {
-                        if (data.success) {
-                            $('#uploadResult').html('<p>Product uploaded successfully. Reload the page to see the new product</p>');
-                        } else {
-                            $('#uploadResult').html('<p>Error: ' + data.error + '</p>');
-                        }
-                    },
-                    error: function () {
-                        $('#uploadResult').html('<p>An error occurred while uploading the product.</p>');
-                    }
-                });
-            });
-        });
+		// Document ready function
+		$(function () {
+			// Form submission event handler for '#uploadForm'
+			$('#uploadForm').on('submit', function (e) {
+				// Prevent the default form submission behavior
+				e.preventDefault();
+				// Create a new FormData object from the form
+				var formData = new FormData(this);
+				// AJAX POST request to the form's action URL
+				$.ajax({
+					url: $(this).attr('action'),
+					type: 'POST',
+					data: formData,
+					processData: false,
+					contentType: false,
+					// Success callback function
+					success: function (data) {
+						if (data.success) {
+							// Display success message
+							$('#uploadResult').html('<p>Product uploaded successfully. Reload the page to see the new product</p>');
+						} else {
+							// Display error message
+							$('#uploadResult').html('<p>Error: ' + data.error + '</p>');
+						}
+					},
+					// Error callback function
+					error: function () {
+						// Display error message
+						$('#uploadResult').html('<p>An error occurred while uploading the product.</p>');
+					}
+				});
+			});
+		});
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
+		// Modal Image Gallery function
+		function onClick(element) {
+			// Set the image source and display the modal
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+	</script>
 	<script>
 		// Get the price input element
 		var priceInput = document.getElementById('priceInput');
@@ -157,6 +207,7 @@
 		priceInput.addEventListener('input', function () {
 			// Check if the input is a valid number and not less than 0
 			if (isNaN(parseFloat(priceInput.value)) || !isFinite(priceInput.value) || parseFloat(priceInput.value) < 0) {
+				// Display error message and clear the input field
 				alert('Please enter a valid positive number for the price.');
 				priceInput.value = '';
 			}

@@ -4,11 +4,14 @@ using System.Data.SqlClient;
 
 namespace FirstWebApp.Controllers
 {
+	// Define the TransactionController class which inherits from the Controller class
 	public class TransactionController : Controller
 	{
+		// Define a static connection string for the SQL database
 		private static string con_string =
-			"Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog = CLOUD-db; Persist Security Info=False;User ID = admin-youyou; Password=C'esttropcool87; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30";
+			"Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
+		// Action method to handle POST requests for placing an order
 		[HttpPost]
 		public ActionResult PlaceOrder(int userId, int productID)
 		{
@@ -39,19 +42,19 @@ namespace FirstWebApp.Controllers
 					// Check if the insert operation was successful
 					if (rowsAffected > 0)
 					{
-						// Redirect the user to the home page after placing the order
+						// Redirect the user to the cart page after placing the order
 						return RedirectToAction("Cart", "Home");
 					}
 					else
 					{
-						// If the insert operation failed, return an error view or message
+						// If the insert operation failed, redirect to the cart page with an error indication
 						return RedirectToAction("Cart", "Home");
 					}
 				}
 			}
-
 		}
 	}
+
 }
 
 

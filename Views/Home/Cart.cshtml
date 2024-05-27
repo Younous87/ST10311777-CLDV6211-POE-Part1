@@ -1,41 +1,53 @@
-﻿@model int  
+﻿@model int // Specifies that the model for this view is of type int
 
+// Access ViewData and cast it to appropriate types
 @{
-	 var userId = ViewData["userId"];
-	 var products = ViewData["Products"] as List<FirstWebApp.Models.productsTable>;
-	var transactions = ViewData["Transactions"] as List<FirstWebApp.Models.transactionTable>;
+    var userId = ViewData["userId"]; // Retrieve userId from ViewData
+    var products = ViewData["Products"] as List<FirstWebApp.Models.productsTable>; // Retrieve list of products from ViewData and cast it to List<productsTable>
+    var transactions = ViewData["Transactions"] as List<FirstWebApp.Models.transactionTable>; // Retrieve list of transactions from ViewData and cast it to List<transactionTable>
 }
 
-
 <div style="margin-top:128px">
-	<h1 class="w3-center">Transaction History</h1>
+    <h1 class="w3-center">Transaction History</h1> <!-- Page title centered -->
 
-	<div class="w3-row-padding" style="margin-top:64px">
-		@foreach (var transaction in transactions)
-		{
-			if (transaction.UserID == (int)userId)
-			{
-				var product = products.FirstOrDefault(p => p.ProductID == transaction.ProductID);
-				if (product != null)
-				{
-					<div class="w3-col l3 m6 w3-margin-bottom">
-						<div class="w3-card">
-							<img src="@product.ImageURL" alt="Product picture" style="width:100%">
-							<div class="w3-container w3-center">
-								<h4 class="card-title">Product ID: @product.ProductID</h4>
-								<p class="card-text">@product.Name</p>
-								<p class="card-text">R@{
-										var price = decimal.Parse(product.Price); @price.ToString("F2")
-									}</p>
-								<p class="card-text">@product.Category</p>
-								<p class="card-text">@(transaction.TransactionTime == null ? "N/A" : ((DateTime)transaction.TransactionTime).ToString("yyyy-MM-dd HH:mm:ss"))</p>
-							</div>
-						</div>
-					</div>
-				}
-			}
-		}
-	</div>
+    <div class="w3-row-padding" style="margin-top:64px">
+        @foreach (var transaction in transactions) // Loop through each transaction
+        {
+            if (transaction.UserID == (int)userId) // Check if the transaction belongs to the current user
+            {
+                var product = products.FirstOrDefault(p => p.ProductID == transaction.ProductID); // Find the product associated with the transaction
+                if (product != null) // If product is found
+                {
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <!-- Responsive column layout -->
+                        <div class="w3-card">
+                            <!-- Card container -->
+                            <img src="@product.ImageURL" alt="Product picture" style="width:100%"> <!-- Product image -->
+                            <div class="w3-container w3-center">
+                                <h4 class="card-title">Product ID: @product.ProductID</h4> <!-- Display product ID -->
+                                <p class="card-text">@product.Name</p> <!-- Display product name -->
+                                <p class="card-text">
+                                    R@{
+                                        var price = decimal.Parse(product.Price); // Parse the product price as decimal
+                                        @price.ToString("F2")
+                        // Format the price to 2 decimal places
+                                    }
+                                </p>
+                                <p class="card-text">@product.Category</p> <!-- Display product category -->
+                                <p class="card-text">
+                                    @(
+                                        transaction.TransactionTime == null ? "N/A" : // Check if TransactionTime is null
+                                        ((DateTime)transaction.TransactionTime).ToString("yyyy-MM-dd HH:mm:ss") // Format the transaction time
+                                        )
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
 </div>
+
 
 

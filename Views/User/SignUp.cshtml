@@ -1,19 +1,30 @@
-﻿
-@{
+﻿@{
+	// Set the title of the page dynamically
 	ViewData["Title"] = "Sign Up";
 }
-<div style="margin-top:128px">
-	<h1>Sign Up</h1>
-	<p>you need to sign up in the website for the application.</p>
 
+<!-- Sign up section container -->
+<div style="margin-top:128px">
+	<!-- Heading -->
+	<h1>Sign Up</h1>
+	<!-- Description -->
+	<p>You need to sign up on the website for the application.</p>
+
+	<!-- Form container -->
 	<div style="margin-top:48px">
+		<!-- Form element -->
 		<br>
 		<form action="about" method="post">
+			<!-- Input field for name -->
 			<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+			<!-- Input field for surname -->
 			<p><input class="w3-input w3-border" type="text" placeholder="Surname" required name="Surname"></p>
+			<!-- Input field for email -->
 			<p><input class="w3-input w3-border" type="text" placeholder="example@gmail.com" required name="Email"></p>
+			<!-- Submit button -->
 			<p>
 				<button class="w3-button w3-black" type="submit">
+					<!-- Icon -->
 					<i class="fa fa-paper-plane"></i> SEND
 				</button>
 			</p>
