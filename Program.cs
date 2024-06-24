@@ -1,27 +1,27 @@
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using Azure.Identity;
-
-// TODO: Replace <storage-account-name> with your actual storage account name
-var blobServiceClient = new BlobServiceClient(
-    new Uri("https://cldv1.blob.core.windows.net"),
-    new DefaultAzureCredential());
+using FirstWebApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+// Register IHttpContextAccessor and session-related services.
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(120);
 });
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Register the Search service
+builder.Services.AddScoped<Search>();
 
 var app = builder.Build();
 
@@ -29,30 +29,26 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Enable session
 app.UseSession();
-//----------------------------------------------------------------------------------------------------------------------------------------------------
 
 // UseRouting should be called before UseEndpoints
 app.UseRouting();
 
 app.UseAuthorization();
 
+// Consolidate the endpoints configuration
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Products}/{action=Upload}/{id?}");
+        pattern: "{controller=Home}/{action=HomePage}/{id?}");
 });
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=HomePage}/{id?}");
 
 app.Run();

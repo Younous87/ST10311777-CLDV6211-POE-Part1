@@ -1,0 +1,50 @@
+﻿@model FirstWebApp.Models.ProductSearchViewModel
+
+@{
+	ViewData["Title"] = "Search Products";
+}
+
+<div class="row" id="work" style="margin-top:128px">
+	<h1 class="w3-center">Search Products</h1>
+	<form asp-controller="Product" asp-action="Search" method="post">
+		<div class="form-group">
+			<input type="text" class="w3-input w3-border" id="SearchText" name="SearchText" value="@Model.SearchText" />
+		</div>
+		<br> <!-- Line break -->
+		<div class="w3-center">
+		<button class="w3-button w3-black w3-center" type="submit">
+			Search
+		</button>
+		</div>
+	</form>
+
+
+	@if (Model.SearchResults != null && Model.SearchResults.Any())
+	{
+		<!-- Loop through each product in the list -->
+		<div class="w3-row-padding" style="margin-top:64px">
+			@foreach (var result in Model.SearchResults)
+			{
+				<!-- Display the product card -->
+				<div class="w3-col l3 m6 w3-margin-bottom">
+					<div class="w3-card">
+						<!-- Display the product image -->
+						<img src="@result.ImageURL" alt="Product picture" style="width:100%">
+						<div class="w3-container w3-center">
+							<!-- Display the product name and price -->
+							<h4 class="card-title">@result.prodName</h4>
+							<p class="card-text">@result.Category</p>
+							<p class="card-text">R @result.Price</p>
+						</div>
+					</div>
+				</div>
+			
+			}
+		</div>
+
+	}
+	else if (Model.SearchResults != null)
+	{
+		<p>No results found.</p>
+	}
+</div>

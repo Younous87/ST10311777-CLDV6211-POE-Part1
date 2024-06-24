@@ -22,16 +22,21 @@ namespace FirstWebApp.Controllers
 		// Declare private readonly fields for logging and HTTP context accessor
 		private readonly ILogger<ProductController> _logger;
 		private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly Search searchService;
 
-		// Constructor for ProductController, initializes the logger and HTTP context accessor
-		public ProductController(ILogger<ProductController> logger, IHttpContextAccessor httpContextAccessor)
+        // Constructor for ProductController, initializes the logger and HTTP context accessor
+        public ProductController(ILogger<ProductController> logger, IHttpContextAccessor httpContextAccessor)
 		{
 			_logger = logger;
 			_httpContextAccessor = httpContextAccessor; // Assign the HTTP context accessor
-		}
+            searchService = new Search();
+        }
 
-		// Action method to handle POST requests for adding a product with an image
-		[HttpPost]
+        
+
+
+        // Action method to handle POST requests for adding a product with an image
+        [HttpPost]
 		public ActionResult MyWork(productsTable product, IFormFile Image)
 		{
 			// Check if an image is provided
@@ -168,6 +173,44 @@ namespace FirstWebApp.Controllers
 			// Redirect to the MyWork action
 			return RedirectToAction("MyWork");
 		}
-	}
+
+        
+
+        [HttpGet]
+        public ActionResult Search()
+        {
+            var model = new ProductSearchViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Search(ProductSearchViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Log to ensure this part of code is reached
+                _logger.LogInformation("Search initiated for: " + model.SearchText);
+
+                model.SearchResults = await searchService.SearchProductsAsync(model.SearchText);
+                return View(model);
+			}
+            else
+            {
+                // Log invalid model state
+                _logger.LogWarning("Invalid model state");
+            }
+
+            foreach (var modelStateEntry in ModelState.Values)
+            {
+	            foreach (var error in modelStateEntry.Errors)
+	            {
+		            _logger.LogWarning($"Error: {error.ErrorMessage}");
+	            }
+            }
+            model.SearchResults = null;
+			return View(model);
+        }
+
+    }
 
 }

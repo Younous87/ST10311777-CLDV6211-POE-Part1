@@ -45,6 +45,11 @@ namespace FirstWebApp.Controllers
 			return View();
 		}
 
+        public IActionResult SearchTab()
+        {
+            return View();
+        }
+
 		// Action method to return the Cart view
 		public IActionResult Cart()
 		{

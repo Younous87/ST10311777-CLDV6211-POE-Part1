@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Set the title dynamically based on the ViewData -->
     <title>@ViewData["Title"] - KhumaloCraft</title>
-    <!-- External CSS stylesheets -->
+    <!-- Searchternal CSS stylesheets -->
     <link rel="stylesheet" href="~/FirstWebApp.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -52,6 +52,7 @@
                         <a asp-area="" asp-controller="Home" asp-action="HomePage" class="w3-bar-item w3-button w3-wide">Khumalo Craft</a>
                         @* <a asp-area="" asp-controller="User" asp-action="SignUp" class="w3-bar-item w3-button"> Sign Up</a> *@
                         <a asp-area="" asp-controller="Home" asp-action="Login" class="w3-bar-item w3-button"> Login</a>
+                        <a asp-area="" asp-controller="Product" asp-action="Search" class="w3-bar-item w3-button"> Search</a>
                         <!-- Right-sided navbar links -->
                         <div class="w3-right w3-hide-small">
                             <a asp-area="" asp-controller="User" asp-action="About" class="w3-bar-item w3-button"><i class="fa fa-question"></i> About Us</a>
