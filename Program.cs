@@ -9,6 +9,9 @@ using FirstWebApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Set the connection string in the static DataAccess class
+DataAccess.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
