@@ -21,12 +21,6 @@ namespace FirstWebApp.Controllers
 			_httpContextAccessor = httpContextAccessor; // Assign the HTTP context accessor
 		}
 
-		// Define a static connection string for the SQL database
-		public static string con_String = "Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
-
-		// Define a static SQL connection using the connection string
-		public static SqlConnection con = new SqlConnection(con_String);
-
 		// Action method to return the HomePage view
 		public IActionResult HomePage()
 		{

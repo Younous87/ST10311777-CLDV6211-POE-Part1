@@ -5,9 +5,6 @@ namespace FirstWebApp.Models
 	// Define the LoginModel class
 	public class LoginModel
 	{
-		// Define a static connection string for the SQL database
-		public static string con_string = "Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
-
 		// Method to select a user from the database by email and name
 		public int SelectUser(string email, string name)
 		{
@@ -15,7 +12,7 @@ namespace FirstWebApp.Models
 			int userId = -1;
 
 			// Create a new instance of SqlConnection using the connection string
-			using (SqlConnection con = new SqlConnection(con_string))
+			using (SqlConnection con = DataAccess.GetConnection())
 			{
 				// Define the SQL query to select userId from the UserTable
 				string sql = "SELECT userId FROM UserTable WHERE userEmail = @Email AND userName = @Name";

@@ -6,9 +6,6 @@ namespace FirstWebApp.Models
 	// Define the transactionTable class
 	public class transactionTable
 	{
-		// Define a static connection string for the SQL database
-		internal static string con_string = "Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
-
 		// Define properties for the transactionTable class
 		public int UserID { get; set; }
 		public int ProductID { get; set; }
@@ -21,7 +18,7 @@ namespace FirstWebApp.Models
 			List<transactionTable> transactions = new List<transactionTable>();
 
 			// Create a new instance of SqlConnection using the connection string
-			using (SqlConnection con = new SqlConnection(con_string))
+			using (SqlConnection con = DataAccess.GetConnection())
 			{
 				// Define the SQL query to select transactions for the specific user
 				string sql = "SELECT * FROM transactionTable WHERE userID = @userID";

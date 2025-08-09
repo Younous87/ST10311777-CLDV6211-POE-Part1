@@ -7,16 +7,12 @@ namespace FirstWebApp.Controllers
 	// Define the TransactionController class which inherits from the Controller class
 	public class TransactionController : Controller
 	{
-		// Define a static connection string for the SQL database
-		private static string con_string =
-			"Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
-
 		// Action method to handle POST requests for placing an order
 		[HttpPost]
 		public ActionResult PlaceOrder(int userId, int productID)
 		{
 			// Create a new instance of SqlConnection using the connection string
-			using (SqlConnection con = new SqlConnection(con_string))
+			using (SqlConnection con = DataAccess.GetConnection())
 			{
 				// Define the SQL query to insert a new record into the transactionTable
 				string sql =

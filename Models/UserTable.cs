@@ -17,7 +17,7 @@ namespace FirstWebApp.Models
 			try
 			{
 				// Define the connection string for the SQL database
-				SqlConnection con = new SqlConnection("Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog=CLOUD-db;Persist Security Info=False;User ID=admin-youyou;Password=C'esttropcool87;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
+				SqlConnection con = DataAccess.GetConnection();
 
 				// Define the SQL query to insert a new user into the UserTable
 				string sql = "INSERT INTO UserTable(userName, userSurname, userEmail) VALUES(@Name, @Surname, @Email)";

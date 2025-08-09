@@ -26,10 +26,7 @@ namespace FirstWebApp.Models
         {
             List<ProductDisplayModel> products = new List<ProductDisplayModel>();
 
-            //string con_string = "Integrated Security=SSPI;Persist Security Info=False;User ID=\"\";Initial Catalog=test;Data Source=labVMH8OX\\SQLEXPRESS";
-         string con_string = "Server=tcp:cloudev-sql-server.database.windows.net,1433;Initial Catalog = CLOUD-db; Persist Security Info=False;User ID = admin-youyou; Password=C'esttropcool87; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30";
-
-            using (SqlConnection con = new SqlConnection(con_string))
+            using (SqlConnection con = DataAccess.GetConnection())
             {
                 string sql = "SELECT prodId, prodName, prodPrice, prodCategory, prodAvailability FROM productsTable";
                 SqlCommand cmd = new SqlCommand(sql, con);
